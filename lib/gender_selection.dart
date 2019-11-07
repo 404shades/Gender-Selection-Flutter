@@ -160,7 +160,10 @@ class _GenderSelectionState extends State<GenderSelection> {
                                           },
                                         )
                                       : null)
-                              : null,
+                              : Container(
+                                  height: 0,
+                                  width: 0,
+                                ),
                         )
                       ],
                     ),
@@ -247,9 +250,11 @@ class _GenderSelectionState extends State<GenderSelection> {
                                             );
                                           },
                                         )
-                                      : null,
-                                )
-                              : null,
+                                      : null)
+                              : Container(
+                                  height: 0,
+                                  width: 0,
+                                ),
                         )
                       ],
                     ),

@@ -17,3 +17,11 @@
 ## [0.0.5]- Release 07 November 2019
 
 * Now you can remove icon by passing selectedGenderCheckIcon as null
+
+## [0.0.6]- Release 07 November 2019
+
+* Fix bug for null icon data
+
+## [0.0.7]- Release 07 November 2019
+
+* Fix bug for null icon data
