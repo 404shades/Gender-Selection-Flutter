@@ -8,3 +8,9 @@
 
 ## [0.0.3]- Release 07 November 2019
 * Adjust the selected icon alignment accordingly
+
+## [0.0.4]- Release 07 November 2019
+* Fix issue for no onChanged given
+
+## [0.0.4]- Release 07 November 2019
+* Now you can remove icon by passing selectedGenderCheckIcon as null

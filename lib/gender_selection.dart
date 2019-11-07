@@ -86,7 +86,11 @@ class _GenderSelectionState extends State<GenderSelection> {
                 onTap: () {
                   setState(() {
                     widget.selectedGender = Gender.Male;
-                    widget.onChanged(widget.selectedGender);
+                    if (widget.onChanged != null) {
+                      widget.onChanged(widget.selectedGender);
+                    } else {
+                      return;
+                    }
                   });
                 },
                 child: Column(
@@ -127,33 +131,36 @@ class _GenderSelectionState extends State<GenderSelection> {
                           ),
                         ),
                         Positioned(
-                          child: AnimatedContainer(
-                              duration: widget.animationDuration,
-                              height: widget.selectedGender == Gender.Male
-                                  ? widget.selectedGenderIconSize
-                                  : 0.0,
-                              width: widget.selectedGender == Gender.Male
-                                  ? widget.selectedGenderIconSize
-                                  : 0.0,
-                              padding: const EdgeInsets.all(1),
-                              curve: Curves.fastLinearToSlowEaseIn,
-                              decoration: BoxDecoration(
-                                  shape: widget.isSelectedGenderIconCircular
-                                      ? BoxShape.circle
-                                      : BoxShape.rectangle,
-                                  color:
-                                      widget.selectedGenderIconBackgroundColor),
-                              child: widget.selectedGender == Gender.Male
-                                  ? LayoutBuilder(
-                                      builder: (context, constraints) {
-                                        return Icon(
-                                          widget.selectedGenderCheckIcon,
-                                          color: widget.selectedGenderIconColor,
-                                          size: constraints.maxHeight,
-                                        );
-                                      },
-                                    )
-                                  : null),
+                          child: widget.selectedGenderCheckIcon != null
+                              ? AnimatedContainer(
+                                  duration: widget.animationDuration,
+                                  height: widget.selectedGender == Gender.Male
+                                      ? widget.selectedGenderIconSize
+                                      : 0.0,
+                                  width: widget.selectedGender == Gender.Male
+                                      ? widget.selectedGenderIconSize
+                                      : 0.0,
+                                  padding: const EdgeInsets.all(1),
+                                  curve: Curves.fastLinearToSlowEaseIn,
+                                  decoration: BoxDecoration(
+                                      shape: widget.isSelectedGenderIconCircular
+                                          ? BoxShape.circle
+                                          : BoxShape.rectangle,
+                                      color: widget
+                                          .selectedGenderIconBackgroundColor),
+                                  child: widget.selectedGender == Gender.Male
+                                      ? LayoutBuilder(
+                                          builder: (context, constraints) {
+                                            return Icon(
+                                              widget.selectedGenderCheckIcon,
+                                              color: widget
+                                                  .selectedGenderIconColor,
+                                              size: constraints.maxHeight,
+                                            );
+                                          },
+                                        )
+                                      : null)
+                              : null,
                         )
                       ],
                     ),
@@ -168,7 +175,11 @@ class _GenderSelectionState extends State<GenderSelection> {
                 onTap: () {
                   setState(() {
                     widget.selectedGender = Gender.Female;
-                    widget.onChanged(widget.selectedGender);
+                    if (widget.onChanged != null) {
+                      widget.onChanged(widget.selectedGender);
+                    } else {
+                      return;
+                    }
                   });
                 },
                 child: Column(
@@ -208,34 +219,37 @@ class _GenderSelectionState extends State<GenderSelection> {
                           ),
                         ),
                         Positioned(
-                          child: AnimatedContainer(
-                            duration: widget.animationDuration,
-                            height: widget.selectedGender == Gender.Female
-                                ? widget.selectedGenderIconSize
-                                : 0.0,
-                            width: widget.selectedGender == Gender.Female
-                                ? widget.selectedGenderIconSize
-                                : 0.0,
-                            padding: const EdgeInsets.all(1),
-                            curve: Curves.fastLinearToSlowEaseIn,
-                            decoration: BoxDecoration(
-                                shape: widget.isSelectedGenderIconCircular
-                                    ? BoxShape.circle
-                                    : BoxShape.rectangle,
-                                color:
-                                    widget.selectedGenderIconBackgroundColor),
-                            child: widget.selectedGender == Gender.Female
-                                ? LayoutBuilder(
-                                    builder: (context, constraints) {
-                                      return Icon(
-                                        widget.selectedGenderCheckIcon,
-                                        color: widget.selectedGenderIconColor,
-                                        size: constraints.maxHeight,
-                                      );
-                                    },
-                                  )
-                                : null,
-                          ),
+                          child: widget.selectedGenderCheckIcon != null
+                              ? AnimatedContainer(
+                                  duration: widget.animationDuration,
+                                  height: widget.selectedGender == Gender.Female
+                                      ? widget.selectedGenderIconSize
+                                      : 0.0,
+                                  width: widget.selectedGender == Gender.Female
+                                      ? widget.selectedGenderIconSize
+                                      : 0.0,
+                                  padding: const EdgeInsets.all(1),
+                                  curve: Curves.fastLinearToSlowEaseIn,
+                                  decoration: BoxDecoration(
+                                      shape: widget.isSelectedGenderIconCircular
+                                          ? BoxShape.circle
+                                          : BoxShape.rectangle,
+                                      color: widget
+                                          .selectedGenderIconBackgroundColor),
+                                  child: widget.selectedGender == Gender.Female
+                                      ? LayoutBuilder(
+                                          builder: (context, constraints) {
+                                            return Icon(
+                                              widget.selectedGenderCheckIcon,
+                                              color: widget
+                                                  .selectedGenderIconColor,
+                                              size: constraints.maxHeight,
+                                            );
+                                          },
+                                        )
+                                      : null,
+                                )
+                              : null,
                         )
                       ],
                     ),
