@@ -25,3 +25,7 @@
 ## [0.0.7]- Release 07 November 2019
 
 * Fix bug for null icon data
+
+## [0.0.8]- Release 07 November 2019
+
+* Updated with example and readme

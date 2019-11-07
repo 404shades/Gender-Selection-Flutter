@@ -2,20 +2,20 @@
 
 A Flutter package for gender selection. It is an aweome gender selection widget with cool gradients and animation effects
 
-[![pub package](https://img.shields.io/badge/pub-0.5.0-orange.svg)](https://pub.dartlang.org/packages/gender_selection)
+[![pub package](https://img.shields.io/badge/pub-0.0.8-orange.svg)](https://pub.dartlang.org/packages/gender_selection)
 [![Awesome Flutter](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/404shades)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/404shades)
 
 ## Demo
 <img src="https://github.com/404shades/Gender-Selection-Flutter/blob/master/img/banner.jpg" />
-<img height="300px" src="https://github.com/404shades/Gender-Selection-Flutter/blob/master/img/demo.png" />
+<img height="500px" src="https://github.com/404shades/Gender-Selection-Flutter/blob/master/img/demo.png" />
 
 
 ## Installing
 Add this to your package's pubspec.yaml file:
 ```dart
 dependencies:
-gender_selection: "^0.0.7"
+gender_selection: "^0.0.8"
 ```
 
 ## Simple Usage
