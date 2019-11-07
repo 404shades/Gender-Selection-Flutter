@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - Release 07 November 2019
 
-* TODO: Describe initial release.
+* A Flutter package for Gender Selection written purely in darts. Works in iOS and Android both
