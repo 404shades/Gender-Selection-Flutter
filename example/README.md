@@ -7,8 +7,8 @@ A Flutter package for gender selection. It is an aweome gender selection widget 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/404shades)
 
 ## Demo
-<img src="https://github.com/404shades/Gender-Selection-Flutter/blob/master/img/banner.jpg" />
-<img height="500px" src="https://github.com/404shades/Gender-Selection-Flutter/blob/master/img/demo.png" />
+<img src="https://raw.githubusercontent.com/404shades/Gender-Selection-Flutter/master/img/banner.jpg" />
+<img height="500px" src="https://raw.githubusercontent.com/404shades/Gender-Selection-Flutter/master/img/demo.png" />
 
 
 ## Installing
